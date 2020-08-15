@@ -8,7 +8,7 @@
 
 ## Hardware Used
 
- - Arduino Nano
+ - Uno clone
  - HC-06 BT module
  - L293d motor driver
  - SG90 servo (steering)
