@@ -35,14 +35,15 @@
 
 ## Hardware Used
 
-- Nano 33 IoT
-- L298N DC motor driver
+- Arduino Uno R3
+- L293D DC motor driver
 - SG90 servo motor
 - BLDC motor
-- 3.7v 3000 mAh Li-Ion battery pack
-- 7.4v 6000 mAh 2S2P Li-Ion battery pack
+- 9v NiMh battery for Arduino
+- 7.4v 6000 mAh 2S2P Li-Ion battery pack for drive motors
 - Passive buzzer
 - 4 x LEDs (2 x red, 2 x white)
+- 4 x 220 ohm resistors
 - BT-enabled controller
 - Android phone
 
@@ -52,6 +53,7 @@
 ## To-Do List
 
 - Swap to Nano 33 IoT for onboard BT
+- Swap to L298N DC motor driver
 - Servo-powered steering rack for front wheels
 - Plastic crown gears attaching motor to rear axle
 - Hide the electronics inside a plastic model car (Revell/Monogram-style kit)
