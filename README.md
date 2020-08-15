@@ -21,13 +21,13 @@
 ## Diagrams
 
 <p align="center">
-    <img src="/images/fritzing_prototype.png" width=800>
+    <img src="/images/fritzing_prototype.png" width=1024>
 </p>
 <p align="center">
-    <i>Prototype v1</i>
+    <i>Prototype v1 with wired "controller"</i>
 </p>
 <p align="center">
-    <img src="/images/fritzing_bt_nano.png" width=800>
+    <img src="/images/fritzing_bt_nano.png" width=1024>
 </p>
 <p align="center">
     <i>Prototype with Nano & BT</i>
