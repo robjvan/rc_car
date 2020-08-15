@@ -21,14 +21,14 @@
 
 ## Software
 
-[Ino file](https://github.com/robjvan/rc_car/blob/master/rc_car_ino/rc_car_ino.ino)
+[Ino file](https://github.com/robjvan/rc_car/blob/master/rc_car_ino/rc_car_ino.ino)  
 [Android App](#)
 
 ## Updates
 
  ### v0.1 - Prototype
 
- <img src="/images/image_placeholder.png">
+ <img src="/images/image_placeholder.png" height=400 width=400>
 
  This version required a makeshift "controller" to test the various circuits.  The controller consisted of 2 x PS2 joysticks to control throttle and steering with pushbuttons to sound the horn and toggle the headlights.  The objective was to confirm feasibility and create basic code to have all parts interact properly.
 
