@@ -1,14 +1,14 @@
 # RC Car Project
 
-## Planned Features
+## Description
 
  - Arduino-powered, bluetooth-controlled toy car
  - Working headlights and brake lights
  - Horn with variable frequencies, can play melodies
 
-## Hardware
+## Hardware Used
 
- - Elegoo Nano v3
+ - Arduino Nano
  - HC-06 BT module
  - L293d motor driver
  - SG90 servo (steering)
@@ -28,18 +28,21 @@
 
 ## Versions
 
- ### v0.1 - Prototype
+ ### v0.1 COMPLETED - Prototype
 
  <img src="/images/prototype_v1.jpg" height=414 width=450>
 
  This version requires a makeshift "controller" to test the various circuits.  The controller consists of 2 x PS2 joysticks to control throttle and steering with pushbuttons to sound the horn and toggle the headlights.  The objective was to confirm feasibility and create basic code to have all parts interact properly.
 
- ### v0.2 - Cutting the cords
+ ### v0.2 WIP - Cutting the cords
 
  Planned for Sept/Oct 2020, waiting for parts from China.  A bluetooth receiver will allow wireless operation with a simple BT controller.
 
- ### Future Ideas
+ ### Planned Features
 
+ - Swap to Nano 33 IoT for onboard BT
+ - Servo-powered steering rack for front wheels
+ - Plastic crown gears attaching motor to rear axle
  - Hide the electronics inside a plastic model car (Revell/Monogram-style kit)
  - Flutter app for Android/iOS devices
  - Cameras for a video feed in mobile control app
