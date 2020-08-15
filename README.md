@@ -30,9 +30,9 @@
 
  ### v0.1 - Prototype
 
- <img src="/images/prototype_v1.jpg" height=450 width=414>
+ <img src="/images/prototype_v1.jpg" height=414 width=450>
 
- This version required a makeshift "controller" to test the various circuits.  The controller consisted of 2 x PS2 joysticks to control throttle and steering with pushbuttons to sound the horn and toggle the headlights.  The objective was to confirm feasibility and create basic code to have all parts interact properly.
+ This version requires a makeshift "controller" to test the various circuits.  The controller consists of 2 x PS2 joysticks to control throttle and steering with pushbuttons to sound the horn and toggle the headlights.  The objective was to confirm feasibility and create basic code to have all parts interact properly.
 
  ### v0.2 - Cutting the cords
 
