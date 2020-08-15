@@ -1,3 +1,12 @@
+/*
+  RC Car Arduino code
+  Handles operations of RC toy vehicle
+
+  created 15 Aug 2020
+  by Rob Vandelinder
+  rob@eastcoastdev.ca
+*/
+
 #include <Servo.h>
 
 // input pins
@@ -28,7 +37,7 @@ void setup()
 {
   //  Serial.begin(9600);
   steeringServo.attach(servoPin);
-  
+
   // set steeringServo position to center
   steeringServo.write(initialPosition);
 
@@ -38,7 +47,7 @@ void setup()
   pinMode(brakeButtonPin, INPUT_PULLUP);
   pinMode(hornButtonPin, INPUT_PULLUP);
   pinMode(headlightButtonPin, INPUT_PULLUP);
-  
+
   pinMode(motorPWM, OUTPUT);
   pinMode(motorPin1, OUTPUT);
   pinMode(motorPin2, OUTPUT);
@@ -51,9 +60,9 @@ void loop()
 {
   joy1x_pos = analogRead(joy1x); // controls drive motor
   joy2y_pos = analogRead(joy2y); // controls steering servo
-  
+
   //  printJoystickPos(joy1x_pos, joy2y_pos);
-  
+
   checkHornButton();
   checkHeadlightButton();
 
@@ -72,11 +81,16 @@ void loop()
   }
 
   // check steering joystick and turn wheels left or right
-  if (joy2y_pos > 550) {
+  if (joy2y_pos > 550)
+  {
     steerLeft(joy2y_pos);
-  } else if (joy2y_pos < 450) {
+  }
+  else if (joy2y_pos < 450)
+  {
     steerRight(joy2y_pos);
-  } else {
+  }
+  else
+  {
     // return to center
     steeringServo.write(90);
   }
@@ -92,15 +106,17 @@ void printJoystickPos(int joy1x, int joy2y)
   Serial.print("\n\n");
 }
 
-void steerLeft(int joy_pos) {
-   // map joyPos to within 20 degree range
+void steerLeft(int joy_pos)
+{
+  // map joyPos to within 20 degree range
   newServoPosition = map(joy_pos, 550, 1023, 90, 110);
   // write new position to servo
-  steeringServo.write(newServoPosition);   
+  steeringServo.write(newServoPosition);
 }
 
-void steerRight(int joy_pos) {
-  newServoPosition = map(joy_pos, 450, 0, 90, 70); 
+void steerRight(int joy_pos)
+{
+  newServoPosition = map(joy_pos, 450, 0, 90, 70);
   steeringServo.write(newServoPosition);
 }
 
@@ -168,19 +184,23 @@ void checkHeadlightButton()
       headlightState = LOW;
       lastDebounceTime = millis();
     }
-//    else if (buttonState == HIGH && headlightState == HIGH)
-//    {
-//      // if button is NOT pressed and headlights are on, leave 'em on
-//      digitalWrite(headlightLedPin, HIGH);
-//      lastDebounceTime = millis();
-//    }
+    //    else if (buttonState == HIGH && headlightState == HIGH)
+    //    {
+    //      // if button is NOT pressed and headlights are on, leave 'em on
+    //      digitalWrite(headlightLedPin, HIGH);
+    //      lastDebounceTime = millis();
+    //    }
   }
 }
 
-void checkHeadlightState() {
-  if (headlightState == HIGH) {
+void checkHeadlightState()
+{
+  if (headlightState == HIGH)
+  {
     digitalWrite(headlightLedPin, HIGH);
-  } else {
+  }
+  else
+  {
     digitalWrite(headlightLedPin, LOW);
   }
 }
