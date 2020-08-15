@@ -8,7 +8,6 @@
 
 ## Hardware Used
 
- - *(list sensors and modules here)*
  - Elegoo Nano v3
  - HC-06 BT module
  - L293d motor driver
