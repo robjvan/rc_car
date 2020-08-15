@@ -21,16 +21,16 @@
 ## Diagrams
 
 <p align="center">
-    <img src="/images/image_placeholder.png" width=450>
+    <img src="/images/fritzing_prototype.png" width=800>
 </p>
 <p align="center">
-    <i>Fritzing Diagram - WIP</i>
+    <i>Prototype v1</i>
 </p>
 <p align="center">
-    <img src="/images/image_placeholder.png" width=450>
+    <img src="/images/fritzing_bt_nano.png" width=800>
 </p>
 <p align="center">
-    <i>Schematic - WIP</i>
+    <i>Prototype with Nano & BT</i>
 </p>
 
 ## Hardware Used
