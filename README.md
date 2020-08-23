@@ -5,33 +5,24 @@
 
 # Arduino RC Car 
 
+## Status: ON HOLD (Waiting for parts)
+
 ## Description
 
 - Arduino-powered, bluetooth-controlled toy car
 - Working headlights and brake lights
 - Horn with variable frequencies, can play melodies
 
-## Software
+## Current Version
 
-[Ino file](https://github.com/robjvan/rc_car/blob/master/rc_car_ino/rc_car_ino.ino)  
-[Android App](#)
-
----
-
-## Diagrams
-
+### v0.1 COMPLETED - "First Prototype"
 <p align="center">
-    <img src="/images/fritzing_prototype.png" width=1024>
+ <img src="/images/prototype_v1.jpg" height=414 width=450>
 </p>
 <p align="center">
-    <i>Prototype v1 with wired "controller"</i>
+  <i>It wasn't the prettiest</i>
 </p>
-<p align="center">
-    <img src="/images/fritzing_bt_nano.png" width=1024>
-</p>
-<p align="center">
-    <i>Prototype with Nano & BT</i>
-</p>
+ This version requires a makeshift "controller" to test the various circuits.  The controller consists of 2 x PS2 joysticks to control throttle and steering with pushbuttons to sound the horn and toggle the headlights.  The objective was to confirm feasibility and create basic code to have all parts interact properly.
 
 ## Hardware Used
 
@@ -47,8 +38,20 @@
 - BT-enabled controller
 - Android phone
 
+## Diagrams
 
----
+<p align="center">
+    <img src="/images/fritzing_prototype.png" width=1024>
+</p>
+<p align="center">
+    <i>Prototype v1 with wired "controller"</i>
+</p>
+<p align="center">
+    <img src="/images/fritzing_bt_nano.png" width=1024>
+</p>
+<p align="center">
+    <i>Prototype with Nano & BT</i>
+</p>
 
 ## To-Do List
 
@@ -66,20 +69,5 @@
 - *GPS tracking?*
 - *OpenCV/Obstacle avoidance?*
 
+<!-- ## Versions -->
 
----
-
-## Versions
-
-### v0.1 COMPLETED - "First Prototype"
-<p align="center">
- <img src="/images/prototype_v1.jpg" height=414 width=450>
-</p>
-<p align="center">
-  <i>It wasn't the prettiest</i>
-</p>
- This version requires a makeshift "controller" to test the various circuits.  The controller consists of 2 x PS2 joysticks to control throttle and steering with pushbuttons to sound the horn and toggle the headlights.  The objective was to confirm feasibility and create basic code to have all parts interact properly.
-
-### v0.2 WIP - "Cutting the cords"
-
- Planned for Sept/Oct 2020, waiting for parts from China.  A bluetooth receiver will enable wireless operation and plastic gears will allow the motor to turn a drive axle.  
